@@ -1,7 +1,3 @@
-new fullpage("#fullpage", {
-  autoScrolling: true,
-  navigation: true,
-});
 
 const navSlide = () => {
   const burger = document.querySelector('.burger');
