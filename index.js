@@ -1,3 +1,30 @@
+let imageItems = [...document.querySelectorAll('.img-wrap')];
+console.log(imageItems);
+let titles = [...document.querySelectorAll('h2')];
+let titleMessage = document.querySelector('title');
+
+// Monitor where they are. And when you come to a specific position, call a function.
+
+let setItemActive = (entries) => {
+  console.log(entries);
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("active");
+    } else {
+      entry.target.classList.remove("active");
+    }
+  });
+};
+
+let options = {};
+
+let observer = new IntersectionObserver(setItemActive, options)
+
+observer.observe(titleMessage);
+
+// Function to load active the moment it is monitored
+
+
 
 const navSlide = () => {
   const burger = document.querySelector('.burger');

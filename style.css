@@ -61,7 +61,7 @@ body{
 }
 
 /* behind the body */
-body::after{
+body::after:not(:nav){
   content: "";
   position: absolute;
   background: black;
