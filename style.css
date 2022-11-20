@@ -54,7 +54,7 @@ body{
   font-family: 'Poppins', sans-serif;
   height: 100%;
   width: 100%;
-  background-image: url("./image/vegas-night.jpg");
+  background-image: url("./images/Dj\ Mr.vibe/main.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -134,12 +134,12 @@ h2{
   z-index: 2;
   letter-spacing: 2px;
   opacity: 0;
-  transition: all 0.2s;
+  transition: all 1s;
 }
 
 h2.active{
   opacity: 1;
-  transition: opacity 3s;
+  transition: opacity 5s;
 }
 
 

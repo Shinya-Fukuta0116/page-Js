@@ -52,7 +52,7 @@ let observer = new IntersectionObserver(setItemActive, options);
 // Odd and even numbers appear in different places.
 imageItems.map((item, index) => {
   console.log(item, index);
-  item.children[0].style.backgroundImage = `url(./image/${index + 1}.jpg)`;
+  item.children[0].style.backgroundImage = `url(./images/${index + 1}.jpg)`;
   index % 2 == 0 ? (item.style.left = "55%") : (item.style.left = "5%");
   observer.observe(item);
 });
