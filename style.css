@@ -54,7 +54,7 @@ body{
   font-family: 'Poppins', sans-serif;
   height: 100%;
   width: 100%;
-  background-image: url("./images/Dj\ Mr.vibe/main.jpg");
+  background-image: url("./images/main.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -108,18 +108,22 @@ section{
 .img-wrap.active{
   width: 40vh;
   opacity: 1;
-  transition: opacity 1s, width 2s;
+  transition: opacity 2s, width 2s;
 }
 
-.img{
+
+
+img{
   position: absolute;
   top: 0;
   left: 0;
-  width: 40vw;
+  width: 100%;
   height: 100%;
   background-image: cover;
   background-position: center;
-  transform: scale(1.6);
+  background-size: contain;
+  object-fit: cover;
+  transform: scale(1);
 }
 
 .img-wrap.title.active > .img{
