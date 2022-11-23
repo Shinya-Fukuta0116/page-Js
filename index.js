@@ -22,6 +22,22 @@ const navSlide = () => {
 
 navSlide();
 
+$(function () {
+  $('a[href^=#]').click(function () {
+    const speed = 500;
+    const href = $(this).attr("href");
+    const target = $(href == "#" || href == "" ? 'html' : href);
+    const position = target.offset().top;
+    $("html, body").animate({ scrollTop: position }, speed, "swing");
+    return false;
+  });
+});
+
+window.addEventListener("scroll", function () {
+  const header = document.querySelector(".header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+})
+
 
 let imageItems = [...document.querySelectorAll('.img-wrap')];
 console.log(imageItems);
